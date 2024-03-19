@@ -133,6 +133,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acb770d30ce7b22fac2c259e2430540bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a286fea5e9d8553ea36064d433719067b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvrs_1_1_stream_id.html">StreamId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrs_1_1_record_file_reader.html#a286fea5e9d8553ea36064d433719067b">getStreamForType</a> (<a class="el" href="namespacevrs.html#ae6fdfd6738201eddee4597c27fe31ac5">RecordableTypeId</a> typeId, uint32_t indexNumber=0) const</td></tr>
 <tr class="separator:a286fea5e9d8553ea36064d433719067b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3da8e7327759dbfe6a347b3a794dd7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvrs_1_1_stream_id.html">StreamId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrs_1_1_record_file_reader.html#ad3da8e7327759dbfe6a347b3a794dd7c">getStreamForName</a> (const string &amp;name) const</td></tr>
+<tr class="separator:ad3da8e7327759dbfe6a347b3a794dd7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31723e14ae3e1498eaaf9624753305c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvrs_1_1_stream_id.html">StreamId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrs_1_1_record_file_reader.html#a31723e14ae3e1498eaaf9624753305c4">getStreamForFlavor</a> (<a class="el" href="namespacevrs.html#ae6fdfd6738201eddee4597c27fe31ac5">RecordableTypeId</a> typeId, const string &amp;flavor, uint32_t indexNumber=0) const</td></tr>
 <tr class="separator:a31723e14ae3e1498eaaf9624753305c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5b17a801f4af270df7bf3e5a311d23e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvrs_1_1_stream_id.html">StreamId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrs_1_1_record_file_reader.html#ad5b17a801f4af270df7bf3e5a311d23e">getStreamForTag</a> (const string &amp;tagName, const string &amp;tag, <a class="el" href="namespacevrs.html#ae6fdfd6738201eddee4597c27fe31ac5">RecordableTypeId</a> typeId=<a class="el" href="namespacevrs.html#ae6fdfd6738201eddee4597c27fe31ac5aec0fc0100c4fc1ce4eea230c3dc10360">RecordableTypeId::Undefined</a>) const</td></tr>
@@ -207,7 +209,7 @@ const map&lt; <a class="el" href="classvrs_1_1_stream_id.html">StreamId</a>, <a 
 <tr class="separator:a6fc3f6e58aba6d53e66dabeff41deb8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35ecb4050743d4cfb0d979a8d6184e0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrs_1_1_record_file_reader.html#a35ecb4050743d4cfb0d979a8d6184e0d">getRecordFormat</a> (<a class="el" href="classvrs_1_1_stream_id.html">StreamId</a> streamId, <a class="el" href="classvrs_1_1_record.html#a449931b6fc23eaef585e3c7a4c0ed2ce">Record::Type</a> recordType, uint32_t formatVersion, <a class="el" href="classvrs_1_1_record_format.html">RecordFormat</a> &amp;outFormat) const</td></tr>
 <tr class="separator:a35ecb4050743d4cfb0d979a8d6184e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02976fb2d32461f5ed9a469b0bc644ac"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrs_1_1_record_file_reader.html#a02976fb2d32461f5ed9a469b0bc644ac">getRecordFormats</a> (<a class="el" href="classvrs_1_1_stream_id.html">StreamId</a> streamId, <a class="el" href="namespacevrs.html#a952b31358e6db377269e28e77ba53100">RecordFormatMap</a> &amp;outFormats) const</td></tr>
+<tr class="memitem:a02976fb2d32461f5ed9a469b0bc644ac"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrs_1_1_record_file_reader.html#a02976fb2d32461f5ed9a469b0bc644ac">getRecordFormats</a> (<a class="el" href="classvrs_1_1_stream_id.html">StreamId</a> streamId, <a class="el" href="namespacevrs.html#a04d155e698e82b4cd67ec9312fadefb0">RecordFormatMap</a> &amp;outFormats) const</td></tr>
 <tr class="separator:a02976fb2d32461f5ed9a469b0bc644ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5968d413f0e3e7ad69854c765c178afd"><td class="memItemLeft" align="right" valign="top"><a id="a5968d413f0e3e7ad69854c765c178afd"></a>
 std::unique_ptr&lt; <a class="el" href="classvrs_1_1_data_layout.html">DataLayout</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getDataLayout</b> (<a class="el" href="classvrs_1_1_stream_id.html">StreamId</a> streamId, const <a class="el" href="classvrs_1_1_content_block_id.html">ContentBlockId</a> &amp;blockId) const</td></tr>
@@ -219,10 +221,10 @@ std::unique_ptr&lt; <a class="el" href="classvrs_1_1_data_layout.html">DataLayou
 <tr class="memitem:a77ebf2a9c78c03470fcfcbe14cb902e6"><td class="memItemLeft" align="right" valign="top"><a id="a77ebf2a9c78c03470fcfcbe14cb902e6"></a>
 <a class="el" href="namespacevrs.html#acb1b4358038394407db2b2dc6200afae">CachingStrategy</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getCachingStrategy</b> () const</td></tr>
 <tr class="separator:a77ebf2a9c78c03470fcfcbe14cb902e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31bf4c708cdda7ece8a771fc1d12381d"><td class="memItemLeft" align="right" valign="top"><a id="a31bf4c708cdda7ece8a771fc1d12381d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrs_1_1_record_file_reader.html#a31bf4c708cdda7ece8a771fc1d12381d">setStatsCallback</a> (FileHandler::CacheStatsCallbackFunction statsCallback)</td></tr>
-<tr class="memdesc:a31bf4c708cdda7ece8a771fc1d12381d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback function for cache stats. <br /></td></tr>
-<tr class="separator:a31bf4c708cdda7ece8a771fc1d12381d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8d0f022f92f9939090d18e824f4b312"><td class="memItemLeft" align="right" valign="top"><a id="aa8d0f022f92f9939090d18e824f4b312"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrs_1_1_record_file_reader.html#aa8d0f022f92f9939090d18e824f4b312">setStatsCallback</a> (const FileHandler::CacheStatsCallbackFunction &amp;statsCallback)</td></tr>
+<tr class="memdesc:aa8d0f022f92f9939090d18e824f4b312"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback function for cache stats. <br /></td></tr>
+<tr class="separator:aa8d0f022f92f9939090d18e824f4b312"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09e29787a837db9844b460fb1aa38eca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrs_1_1_record_file_reader.html#a09e29787a837db9844b460fb1aa38eca">purgeFileCache</a> ()</td></tr>
 <tr class="separator:a09e29787a837db9844b460fb1aa38eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdc88304db2863c0ee09294e91c187dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrs_1_1_record_file_reader.html#abdc88304db2863c0ee09294e91c187dd">setFileHandler</a> (std::unique_ptr&lt; <a class="el" href="classvrs_1_1_file_handler.html">FileHandler</a> &gt; fileHandler)</td></tr>
@@ -260,7 +262,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Remove all registered stream players. </p><dl class="section return"><dt>Returns</dt><dd>O on success, or an error if the file isn't closed, and stream players were not removed. </dd></dl>
+<p>Remove all registered stream players. </p><dl class="section return"><dt>Returns</dt><dd>O on success. </dd></dl>
 
 </div>
 </div>
@@ -919,7 +921,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacevrs.html#a952b31358e6db377269e28e77ba53100">RecordFormatMap</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacevrs.html#a04d155e698e82b4cd67ec9312fadefb0">RecordFormatMap</a> &amp;&#160;</td>
           <td class="paramname"><em>outFormats</em>&#160;</td>
         </tr>
         <tr>
@@ -1055,6 +1057,31 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classvrs_1_1_stream_id.html" title="VRS stream identifier class.">StreamId</a>. Call isValid() to know if a matching <a class="el" href="classvrs_1_1_stream_id.html" title="VRS stream identifier class.">StreamId</a> was actually found. </dd></dl>
+
+</div>
+</div>
+<a id="ad3da8e7327759dbfe6a347b3a794dd7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3da8e7327759dbfe6a347b3a794dd7c">&#9670;&nbsp;</a></span>getStreamForName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvrs_1_1_stream_id.html">StreamId</a> vrs::RecordFileReader::getStreamForName </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Find a stream from an absolute or relative numeric name. Absolute numeric names are in the form &lt;numeric_recordable_type_id&gt;-&lt;instance_id&gt;, eg 1201-1 Relative numeric names are in the form &lt;numeric_recordable_type_id&gt;+&lt;instance_id&gt;, eg 1201+1 Relative numeric names have instance ids interpreted as the nth stream of that type, eg 1201+3 is the 3rd stream with the recordable type id 1201 (if there is such a stream). In all cases, use isValid() to verify that the stream was found in the file. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>an absolute or relative numeric name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="classvrs_1_1_stream_id.html" title="VRS stream identifier class.">StreamId</a>, valid only if the numeric name exists in the file. </dd></dl>
 
 </div>
 </div>
